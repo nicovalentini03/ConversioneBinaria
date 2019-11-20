@@ -24,5 +24,27 @@ namespace ConversioneBinaria
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string n = TxtBinary.Text;
+            if (Combobox.SelectedIndex == 0)
+            {
+                int ris = Convert.ToInt32(n, 2);
+                TxtConversione.Text = ris.ToString();
+
+            }
+            else if (Combobox.SelectedIndex == 1)
+            {
+                int a = int.Parse(n);
+                string ris = Convert.ToString(a, 2);
+                TxtConversione.Text = ris.ToString();
+            }
+              
+
+
+
+
+        }
     }
 }

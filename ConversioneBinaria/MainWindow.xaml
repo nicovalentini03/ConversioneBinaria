@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ConversioneBinaria"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="416" Width="559">
+    <Grid Margin="0,0,2,0">
+        <ComboBox x:Name="Combobox" HorizontalAlignment="Left" Margin="50,95,0,0" VerticalAlignment="Top" Width="150" Height="35">
+            <ComboBox>da Binario</ComboBox>
+            <ComboBox>Da Decimale</ComboBox>
+        </ComboBox>
+        <Button Content="Converti" HorizontalAlignment="Left" Margin="50,251,0,0" VerticalAlignment="Top" Width="150" Height="35" Click="Button_Click" FontSize="16"/>
+        <TextBox  x:Name="TxtBinary" HorizontalAlignment="Left" Height="35" Margin="340,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="TxtConversione" HorizontalAlignment="Left" Height="35" Margin="340,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsReadOnly="True"/>
+        <Label Content="inserisci la base" HorizontalAlignment="Left" Margin="50,56,0,0" VerticalAlignment="Top" Width="150" FontSize="18"/>
+        <Label Content="inserisci il numero" HorizontalAlignment="Left" Margin="340,56,0,0" VerticalAlignment="Top" Width="160" Height="34" FontSize="18"/>
+
     </Grid>
 </Window>
